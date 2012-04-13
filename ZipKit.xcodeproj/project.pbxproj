@@ -721,6 +721,74 @@
 			};
 			name = Release;
 		};
+		B138D8EA153807F100D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+			};
+			name = AppStore;
+		};
+		B138D8EB153807F100D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZipKit_Prefix.pch;
+				INFOPLIST_FILE = "ZipKitFW-Info.plist";
+				INSTALL_PATH = "@rpath//Frameworks";
+				PRODUCT_NAME = ZipKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = AppStore;
+		};
+		B138D8EC153807F100D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZipKit_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PRODUCT_NAME = zipkit;
+				ZERO_LINK = NO;
+			};
+			name = AppStore;
+		};
+		B138D8ED153807F100D1BCCA /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREFIX_HEADER = ZipKit_Prefix.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = touchzipkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ZERO_LINK = NO;
+			};
+			name = AppStore;
+		};
 		B1CBBEAD141EE1230011D9A7 /* Ad-Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -873,6 +941,7 @@
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Debug */,
 				1DEB91AF08733DA50010E9CD /* Release */,
+				B138D8EB153807F100D1BCCA /* AppStore */,
 				B1CBBEAE141EE1230011D9A7 /* Ad-Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -883,6 +952,7 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
+				B138D8EA153807F100D1BCCA /* AppStore */,
 				B1CBBEAD141EE1230011D9A7 /* Ad-Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -893,6 +963,7 @@
 			buildConfigurations = (
 				CB9B9CB7109F665C003E3F8B /* Debug */,
 				CB9B9CB8109F665C003E3F8B /* Release */,
+				B138D8EC153807F100D1BCCA /* AppStore */,
 				B1CBBEAF141EE1230011D9A7 /* Ad-Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -903,6 +974,7 @@
 			buildConfigurations = (
 				CB9B9CEF109F6769003E3F8B /* Debug */,
 				CB9B9CF0109F6769003E3F8B /* Release */,
+				B138D8ED153807F100D1BCCA /* AppStore */,
 				B1CBBEB0141EE1230011D9A7 /* Ad-Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
