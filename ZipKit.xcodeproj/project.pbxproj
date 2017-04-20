@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209462061EA87D3600AF801A /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 209462051EA87D3600AF801A /* libz.1.tbd */; };
 		CB9B9A24109F63AC003E3F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
 		CB9B9B0B109F643D003E3F8B /* GMAppleDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9B9B08109F643D003E3F8B /* GMAppleDouble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9B9B0C109F643D003E3F8B /* GMAppleDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B9B09109F643D003E3F8B /* GMAppleDouble.m */; };
@@ -45,7 +46,6 @@
 		CB9B9B57109F64A0003E3F8B /* ZKLFHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9B9B45109F64A0003E3F8B /* ZKLFHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9B9B58109F64A0003E3F8B /* ZKLFHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B9B46109F64A0003E3F8B /* ZKLFHeader.m */; };
 		CB9B9B64109F64D3003E3F8B /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CB9B9B62109F64D3003E3F8B /* Credits.html */; };
-		CB9B9BE7109F6518003E3F8B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9B9BE6109F6518003E3F8B /* libz.dylib */; };
 		CB9B9BF4109F6578003E3F8B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9B9BF3109F6578003E3F8B /* CoreServices.framework */; };
 		CB9B9CB9109F666B003E3F8B /* ZKLFHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B9B46109F64A0003E3F8B /* ZKLFHeader.m */; };
 		CB9B9CBA109F667D003E3F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
@@ -84,7 +84,6 @@
 		CB9B9D00109F6795003E3F8B /* NSFileManager+ZKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B9B18109F6455003E3F8B /* NSFileManager+ZKAdditions.m */; };
 		CB9B9D01109F6796003E3F8B /* NSString+ZKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B9B1A109F6455003E3F8B /* NSString+ZKAdditions.m */; };
 		CB9B9D08109F67E2003E3F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9B9D07109F67E2003E3F8B /* Foundation.framework */; };
-		CB9B9D88109F67FF003E3F8B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9B9D87109F67FF003E3F8B /* libz.dylib */; };
 		CB9B9E3C109F6B72003E3F8B /* ZKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B9B30109F646B003E3F8B /* ZKLog.m */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +113,8 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		209462051EA87D3600AF801A /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		209462071EA87D9600AF801A /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libz.1.tbd; sourceTree = DEVELOPER_DIR; };
 		32DBCF5E0370ADEE00C91783 /* ZipKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipKit_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* ZipKitFW-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZipKitFW-Info.plist"; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* ZipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,8 +173,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209462061EA87D3600AF801A /* libz.1.tbd in Frameworks */,
 				CB9B9A24109F63AC003E3F8B /* Foundation.framework in Frameworks */,
-				CB9B9BE7109F6518003E3F8B /* libz.dylib in Frameworks */,
 				CB9B9BF4109F6578003E3F8B /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9B9D08109F67E2003E3F8B /* Foundation.framework in Frameworks */,
-				CB9B9D88109F67FF003E3F8B /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +221,7 @@
 				089C1665FE841158C02AAC07 /* Resources */,
 				1058C7B2FEA5585E11CA2CBB /* Linked Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				209462041EA87D3500AF801A /* Frameworks */,
 			);
 			name = ZipKit;
 			sourceTree = "<group>";
@@ -254,6 +255,15 @@
 				CB9B9D86109F67EF003E3F8B /* iPhone OS */,
 			);
 			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		209462041EA87D3500AF801A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				209462071EA87D9600AF801A /* libz.1.tbd */,
+				209462051EA87D3600AF801A /* libz.1.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -507,7 +517,6 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ZipKit" */;
 			compatibilityVersion = "Xcode 3.2";
